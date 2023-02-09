@@ -26,6 +26,7 @@ def start(dataset: Optional[str] = None) -> None:
         :params dataset, The optional CLI argument. This will be used when the user selects any of the
         returns None
     """
+    print('Starting the Ingest')
     return None
 
 if __name__ == '__main__':

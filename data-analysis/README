@@ -1,8 +1,10 @@
 ## What is this section about
-This section is all about data analysis of Network files
+
+This section is all about data analysis of Network files. The endpoint that Data Analysis is targetting is Elasticsearch.
 
 ## Setup Data Analysis ETL Pipeline
-1) Setup a Virtual environment `python3 -m venv env`
-2) Activate it `source env/bin/activate`
-3) Pip install all dependancies `pip install -r requirements.txt`
-4) To run the application run `python3 main.py __command__` in our case you substitute in `__command__` for start
+
+1. Setup a Virtual environment `python3 -m venv env`
+2. Activate it `source env/bin/activate`
+3. Pip install all dependancies `pip install -r requirements.txt`
+4. To run the application run `python3 main.py __command__` in our case you substitute in `__command__` for start
