@@ -4,21 +4,25 @@ from collections import defaultdict
 from typing import Any
 import uuid
 
+from elasticsearch import Elasticsearch
+import pandas as pd
+
 class Ingest:
     
     
     def __init__(self, name: str, index: str):
         self.name = name
         self.index = index
+        
+        self.es = ElasticSearch('http://localhost:9200')
     
     @abstractclassmethod
     def normalize(self , data: ...):
        raise NotImplementedError
     
     
-    @abstractclassmethod
-    def extract(self):
-        raise NotImplementedError
+    def extract(self, data):
+        print('Inside extract')
         
     def transform(self, data) -> ...:
         """
@@ -57,6 +61,7 @@ class Ingest:
             Returns None
         """
         print('start the loading phase')
+        self.es.indicies.create(index='project_name', data=data)
         return None
     
 
