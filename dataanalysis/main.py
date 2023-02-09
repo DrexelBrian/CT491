@@ -1,8 +1,9 @@
 import glob
 import os
 from typing import Optional
+from Utilities.Utilities import Utilities
 
-from dataanalysis.Utilities.Utilities import Utilities
+import json
 
 import typer
 from rich import print
@@ -29,8 +30,13 @@ def start(dataset: Optional[str] = None) -> None:
         :params dataset, The optional CLI argument. This will be used when the user selects any of the
         returns None
     """
+    # TODO: Pick up here for loading owner data
+    owner_data = json.load('owner_data.json')
+    for owner in owner_data:
+        print(owner)
     print('Starting the Ingest')
-    Utilities.execute('data', 'data_source_name')
+    # Utilities.execute(data, 'data_source_name')
+    owner_data.close()
     return None
 
 if __name__ == '__main__':

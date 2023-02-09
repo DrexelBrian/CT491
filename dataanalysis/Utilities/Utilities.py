@@ -1,9 +1,6 @@
+from Ingest.Ingest import Ingest
 
-from dataanalysis.Ingest.Ingest import Ingest
-
-
-class Utilities(Ingest):
-    
+class Utilities(Ingest):    
     def execute(self, data, data_source_name) -> None:
         """
             This is the execution loop for the extraction
