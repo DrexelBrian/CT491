@@ -1,0 +1,10 @@
+typer[all]
+pandas
+numpy
+rich
+requests
+python-dotenv
+SQLAlchemy
+flake8
+autopep8
+elasticsearch
