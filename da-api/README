@@ -1,0 +1,7 @@
+## Setup of the API Server
+
+1. Start with creating a virutal env. `python3 -m venv env` then activate it
+1. uvicorn main:app --reload
+
+1. When setting up Grafana make sure to use the correct API endpoints for the URL field. 
+If you want to show Pet data the endpoint will be `http://localhost:8000/pet` 
