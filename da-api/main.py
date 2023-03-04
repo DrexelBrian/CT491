@@ -232,7 +232,7 @@ pet_data = [{
     }
 ]
 
-paymet_data = [{
+payment_data = [{
    	 "owner_id": 752833,
    	 "payment_id": "461BE376-B450-4CAD-9CD1-7574F0244E0F",
    	 "staff_id": 3823,
@@ -551,9 +551,9 @@ def pets():
 
 @app.get("/payment")
 def payments():
-    return {'payment_data': paymet_data}
+    return {'payment_data': payment_data}
 
 
 @app.get("/owner")
-def owner():
+def owners():
     return {'owner_data': owner_data}
